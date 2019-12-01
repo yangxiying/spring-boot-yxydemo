@@ -3,6 +3,9 @@ package com.yxycoding.mybatisplus.demo.user.service.impl;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.crypto.SecureUtil;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yxycoding.mybatisplus.demo.user.entity.OrmUser;
 import com.yxycoding.mybatisplus.demo.user.service.IOrmUserService;
 import lombok.extern.slf4j.Slf4j;
@@ -10,6 +13,7 @@ import org.assertj.core.util.Lists;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.internal.matchers.Or;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -30,8 +34,23 @@ public class OrmUserServiceImplTest {
     IOrmUserService iOrmUserService;
     @Test
     public void test1() throws Exception{
-        Map<String, Object> map = iOrmUserService.getMap(null);
-        List<OrmUser> ormUsers = iOrmUserService.getBaseMapper().selectList(null);
+//        Map<String, Object> map = iOrmUserService.getMap(null);
+//        List<OrmUser> ormUsers = iOrmUserService.getBaseMapper().selectList(null);
+
+
+
+//        OrmUser ormUser = new OrmUser().setName("test");
+        OrmUser ormUser = new OrmUser();
+        QueryWrapper<OrmUser> queryWrapper = new QueryWrapper(ormUser);
+        queryWrapper.or().like("name","test");
+        List list = iOrmUserService.list(queryWrapper);
+
+        Page<OrmUser> ormUserPage = new Page<>();
+        ormUserPage.setSize(3);
+        ormUserPage.setCurrent(2);
+
+        IPage<OrmUser> page = iOrmUserService.page(ormUserPage, queryWrapper);
+        List<OrmUser> records = page.getRecords();
         System.out.println("");
     }
 
@@ -49,7 +68,7 @@ public class OrmUserServiceImplTest {
         List<Integer> ids = userList.stream().map(OrmUser::getId).collect(Collectors.toList());
         log.debug("【userList#ids】= {}", ids);
 
-        iOrmUserService.getBaseMapper().selectPage()
+//        iOrmUserService.getBaseMapper().selectPage()
     }
 
 }

@@ -1,6 +1,9 @@
 package com.yxycoding.mybatisplus.demo.auser.entity;
 
 import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.FieldStrategy;
+import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -23,6 +26,7 @@ public class OrmRole implements Serializable {
     /**
      * 角色名
      */
+//    @TableField(whereStrategy= FieldStrategy.NOT_EMPTY)
     private String name;
 
 

@@ -2,7 +2,45 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yxycoding.mybatisplus.demo.auser.mapper.OrmRoleMapper">
 
-    <select id="selecttest" resultType="java.lang.Integer">
-        select 2
+    <select id="selecttest" resultType="java.util.HashMap">
+        SELECT
+        	a.id AS id,
+            a.NAME AS NAME,
+            a.PASSWORD AS PASSWORD,
+            a.salt AS salt,
+            a.email AS email,
+            a.phone_number AS phone_number,
+            a.STATUS AS STATUS,
+            a.create_time AS create_time,
+            a.last_login_time AS last_login_time,
+            a.last_update_time AS last_update_time,
+            c.id AS role_id,
+            c.NAME AS rolename
+        FROM
+            orm_user a
+        LEFT JOIN orm_user_role b ON a.id = b.user_id
+        LEFT JOIN orm_role c ON b.role_id = c.id
+    </select>
+
+
+    <select id="selecttest2" resultType="java.util.HashMap">
+        SELECT
+        	a.id AS id,
+            a.NAME AS NAME,
+            a.PASSWORD AS PASSWORD,
+            a.salt AS salt,
+            a.email AS email,
+            a.phone_number AS phone_number,
+            a.STATUS AS STATUS,
+            a.create_time AS create_time,
+            a.last_login_time AS last_login_time,
+            a.last_update_time AS last_update_time,
+            c.id AS role_id,
+            c.NAME AS rolename
+        FROM
+            orm_user a
+        LEFT JOIN orm_user_role b ON a.id = b.user_id
+        LEFT JOIN orm_role c ON b.role_id = c.id
+                ${ew.customSqlSegment}
     </select>
 </mapper>

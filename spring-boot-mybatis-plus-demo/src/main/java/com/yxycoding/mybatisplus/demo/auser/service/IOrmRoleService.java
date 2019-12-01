@@ -1,7 +1,10 @@
 package com.yxycoding.mybatisplus.demo.auser.service;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.yxycoding.mybatisplus.demo.auser.entity.OrmRole;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,5 +16,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IOrmRoleService extends IService<OrmRole> {
 
-    int selecttest();
+    List selecttest();
+
+    List selecttest2(Wrapper wrapper);
 }

@@ -1,0 +1,29 @@
+package ${package}.${moduleName}.mapper;
+
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.toolkit.Constants;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
+import ${package}.${moduleName}.entity.${className};
+
+import java.util.List;
+
+/**
+ * <p>
+ * ${comments}
+ * </p>
+ *
+ * @package:  ${package}.${moduleName}.mapper
+ * @description: ${comments}
+ * @author: ${author}
+ * @date: Created in ${datetime}
+ * @copyright: Copyright (c) ${year}
+ * @version: V1.0
+ * @modified: ${author}
+ */
+@Component
+public interface ${className}Mapper extends BaseMapper<${className}> {
+
+    List<${className}> qry${className}(@Param(Constants.WRAPPER) Wrapper<${className}> userWrapper);
+}

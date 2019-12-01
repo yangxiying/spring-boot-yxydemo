@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c0f04b4-1a01-41e6-8478-8e502aee8309" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/MybatisPlusGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-codegen/spring-boot-mybatis-plus-codegen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/auser/entity/OrmRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/auser/entity/OrmRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/auser/mapper/OrmRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/auser/mapper/OrmRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/auser/service/IOrmRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/auser/service/IOrmRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/auser/service/impl/OrmRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/auser/service/impl/OrmRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/resources/mapper/auser/OrmRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/resources/mapper/auser/OrmRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/SpringBootMybatisPlusDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/SpringBootMybatisPlusDemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/demo/auser/service/impl/OrmRoleServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/demo/auser/service/impl/OrmRoleServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/demo/user/service/impl/OrmUserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/demo/user/service/impl/OrmUserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yxydemo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yxydemo.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yxydemo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yxydemo.iws" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -31,10 +43,12 @@
   </component>
   <component name="ProjectId" id="1U0R7HFL3FPUHDG996FJX1NveP6" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-mybatis-plus-codegen/src/main/resources/template" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -42,11 +56,23 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.yxycoding.mybatisplus.demo.generatorext.mapper" />
+      <recent name="com.yxycoding.codegen.service.impl" />
+      <recent name="com.yxycoding.codegen" />
+      <recent name="com.yxycoding.codegen.utils" />
       <recent name="com.yxycoding.mybatisplus.demo.auser.service.impl" />
-      <recent name="com.yxycoding.mybatisplus.demo.user.service.impl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yxycoding.codegen.controller" />
+      <recent name="com.yxycoding.mybatisplus.demo.config" />
+      <recent name="com.yxycoding.codegen.entity" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\myGitProject\spring-boot-yxydemo\spring-boot-mybatis-plus-codegen\src\main\resources\template" />
+      <recent name="E:\myGitProject\spring-boot-yxydemo\spring-boot-mybatis-plus-codegen\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -61,31 +87,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrmUserServiceImplTest.testSaveList">
-    <configuration name="MybatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yxycoding.mybatisplus.demo.MybatisPlusGenerator" />
-      <module name="spring-boot-mybatis-plus-demo" />
+  <component name="RunManager" selected="JUnit.UserRoleRelMapperTest.testMy">
+    <configuration name="CodeGenServiceImplTest.generatorCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-mybatis-plus-codegen" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yxycoding.mybatisplus.demo.*" />
+          <option name="PATTERN" value="com.yxycoding.codegen.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrmRoleServiceImplTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-boot-mybatis-plus-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yxycoding.mybatisplus.demo.auser.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yxycoding.mybatisplus.demo.auser.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.yxycoding.mybatisplus.demo.auser.service.impl.OrmRoleServiceImplTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="com.yxycoding.codegen.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.yxycoding.codegen.service.impl.CodeGenServiceImplTest" />
+      <option name="METHOD_NAME" value="generatorCode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,23 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrmUserServiceImplTest.testSaveList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-boot-mybatis-plus-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yxycoding.mybatisplus.demo.user.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yxycoding.mybatisplus.demo.user.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.yxycoding.mybatisplus.demo.user.service.impl.OrmUserServiceImplTest" />
-      <option name="METHOD_NAME" value="testSaveList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringBootMybatisPlusDemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringBootMybatisPlusDemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-mybatis-plus-demo" />
       <extension name="coverage">
         <pattern>
@@ -133,7 +130,38 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yxycoding.mybatisplus" />
       <option name="MAIN_CLASS_NAME" value="com.yxycoding.mybatisplus.SpringBootMybatisPlusDemoApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootMybatisPlusDemoApplicationTests.testMy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-mybatis-plus-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yxycoding.mybatisplus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yxycoding.mybatisplus" />
+      <option name="MAIN_CLASS_NAME" value="com.yxycoding.mybatisplus.SpringBootMybatisPlusDemoApplicationTests" />
+      <option name="METHOD_NAME" value="testMy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRoleRelMapperTest.testMy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-mybatis-plus-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yxycoding.mybatisplus.demo.generatorext.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yxycoding.mybatisplus.demo.generatorext.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.yxycoding.mybatisplus.demo.generatorext.mapper.UserRoleRelMapperTest" />
+      <option name="METHOD_NAME" value="testMy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrmUserServiceImplTest.testSaveList" />
-        <item itemvalue="JUnit.OrmRoleServiceImplTest.test1" />
-        <item itemvalue="Application.MybatisPlusGenerator" />
+        <item itemvalue="JUnit.UserRoleRelMapperTest.testMy" />
+        <item itemvalue="JUnit.SpringBootMybatisPlusDemoApplicationTests.testMy" />
+        <item itemvalue="JUnit.SpringBootMybatisPlusDemoApplicationTests" />
+        <item itemvalue="JUnit.CodeGenServiceImplTest.generatorCode" />
         <item itemvalue="JUnit.OrmUserServiceImplTest.test1" />
-        <item itemvalue="JUnit.SpringBootMybatisPlusDemoApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -167,8 +195,25 @@
       <option name="presentableId" value="Default" />
       <updated>1574491356810</updated>
       <workItem from="1574491360676" duration="7114000" />
-      <workItem from="1574498594638" duration="2238000" />
+      <workItem from="1574498594638" duration="3667000" />
+      <workItem from="1574751735602" duration="3777000" />
+      <workItem from="1575165501650" duration="23882000" />
     </task>
+    <task id="LOCAL-00001" summary="试验使用mybatis-plus">
+      <created>1574501076405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574501076405</updated>
+    </task>
+    <task id="LOCAL-00002" summary="试验使用mybatis-plus">
+      <created>1574501137109</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574501137109</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,23 +232,57 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="试验使用mybatis-plus" />
+    <option name="LAST_COMMIT_MESSAGE" value="试验使用mybatis-plus" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/demo/user/service/impl/OrmUserServiceImplTest.java</url>
-          <line>34</line>
+          <line>53</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus-codegen/src/main/java/com/yxycoding/codegen/utils/CodeGenUtil.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/demo/auser/service/impl/OrmRoleServiceImplTest.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="4" />
+          <line>43</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/auser/service/impl/OrmRoleServiceImpl.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="5" />
+          <line>30</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/main/java/com/yxycoding/mybatisplus/demo/auser/service/impl/OrmRoleServiceImpl.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/demo/auser/service/impl/OrmRoleServiceImplTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus-codegen/src/main/java/com/yxycoding/codegen/service/impl/CodeGenServiceImpl.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/SpringBootMybatisPlusDemoApplicationTests.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus-demo/src/test/java/com/yxycoding/mybatisplus/demo/generatorext/mapper/UserRoleRelMapperTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

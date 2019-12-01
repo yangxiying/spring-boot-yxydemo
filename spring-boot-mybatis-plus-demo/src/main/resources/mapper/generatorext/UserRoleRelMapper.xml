@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxycoding.mybatisplus.demo.generatorext.mapper.UserRoleRelMapper">
+<!--    <resultMap id="userRoleRelMap" type="com.yxycoding.mybatisplus.demo.generatorext.entity.UserRoleRel">-->
+<!--        <id property="id" jdbcType="INTEGER" column="id"/>-->
+<!--        <result property="name" jdbcType="VARCHAR" column="NAME"/>-->
+<!--        <result property="password" jdbcType="VARCHAR" column="PASSWORD"/>-->
+<!--        <result property="salt" jdbcType="VARCHAR" column="salt"/>-->
+<!--        <result property="email" jdbcType="VARCHAR" column="email"/>-->
+<!--        <result property="phoneNumber" jdbcType="VARCHAR" column="phone_number"/>-->
+<!--        <result property="status" jdbcType="INTEGER" column="STATUS"/>-->
+<!--        <result property="createTime" jdbcType="DATE" column="create_time"/>-->
+<!--        <result property="lastLoginTime" jdbcType="DATE" column="last_login_time"/>-->
+<!--        <result property="lastUpdateTime" jdbcType="DATE" column="last_update_time"/>-->
+<!--        <result property="roleId" jdbcType="INTEGER" column="role_id"/>-->
+<!--        <result property="rolename" jdbcType="VARCHAR" column="rolename"/>-->
+<!--    </resultMap>-->
+
+    <select id="qryUserRoleRel" resultType="com.yxycoding.mybatisplus.demo.generatorext.entity.UserRoleRel">
+        SELECT
+        a.id AS id,
+        a.NAME AS NAME,
+        a.PASSWORD AS PASSWORD,
+        a.salt AS salt,
+        a.email AS email,
+        a.phone_number AS phone_number,
+        a.STATUS AS STATUS,
+        a.create_time AS create_time,
+        a.last_login_time AS last_login_time,
+        a.last_update_time AS last_update_time,
+        c.id AS role_id,
+        c.NAME AS rolename
+        FROM
+        orm_user a
+        LEFT JOIN orm_user_role b ON a.id = b.user_id
+        LEFT JOIN orm_role c ON b.role_id = c.id
+        ${ew.customSqlSegment}
+    </select>
+</mapper>
